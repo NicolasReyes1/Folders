@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Seleccionar Carpeta Base y Crear Subcarpetas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+    input[type="text"], input[type="file"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .input-group {
+      margin-bottom: 15px;
+    }
+    .message {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="input-group">
+  <label for="selectFolderButton">Seleccione una ruta para la carpeta base:</label>
+  <br>
+  <button id="selectFolderButton">Seleccionar Ruta</button>
+  <br>
+  <input type="text" id="basePathInput" placeholder="Ruta de la carpeta base" readonly>
+</div>
+
+<div class="input-group">
+  <label for="txtFileInput">Seleccione un archivo de texto para crear subcarpetas:</label>
+  <br>
+  <input type="file" id="txtFileInput" accept=".txt">
+</div>
+
+<button id="createSubfoldersButton">Crear Subcarpetas</button>
+
+<div id="message" class="message"></div>
+
+<script src="renderer.js"></script>
+</body>
+</html>

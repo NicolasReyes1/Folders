@@ -1,0 +1,12 @@
+{
+  "name": "electron-file-manager",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^15.0.0",
+    "fs-extra": "^11.2.0"
+  }
+}
